@@ -1,12 +1,13 @@
 <?php
 
-$num = 10;
+$num = 23;
 
 for ($i=2; $i<=$num; $i++) { 
     if ($num % $i == 0) {
     echo $num . 'は素数ではありません';
     break;
-    } else {
+    } elseif ($num % $i == 1){
     echo $num . 'は素数です';
+    break;
     } 
 }
